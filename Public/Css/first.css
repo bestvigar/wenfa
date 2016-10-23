@@ -1,0 +1,42 @@
+
+*{
+	margin:0px;
+	padding:0px;
+}
+body{
+	font-family:楷体;
+	font-size:15px;
+	color:white;
+	
+}
+#oo{
+	
+	background-image: url(9.jpg);
+	width:750px;
+	height: 500px;
+	/*margin-left:150px;*/
+}
+#one{
+	margin-bottom:10px;
+	/*margin-left:30px;*/
+	font-size: white;
+	/*margin-top: 150px;*/
+}
+#one input{
+	width: 100px;
+	height: 25px;
+	margin-top: 5px;
+	background-color: 	#483D8B;
+}
+#ff input{
+	font-family:楷体;
+	font-size:15px;
+	color:white;
+	width:60px;
+	height: 25px;
+	margin-left:80px;
+	background-color: 	#483D8B;
+}
+#dd{
+	background-image: url(3.jpg);
+}

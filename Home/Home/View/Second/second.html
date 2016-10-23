@@ -1,0 +1,47 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charest=utf-8">
+		<title>主页</title>
+		<load href="__PUBLIC__/Css/basic.css"/>
+		<load href="__PUBLIC__/Css/second.css"/>
+		<load href="__PUBLIC__/Js/jquery.js"/>
+	</head>
+	<body>
+		<foreach name='list' item='it'>
+			<div id='one'>
+			<table>
+				<tr>{$it.question}</tr></br>
+				<tr><input type='radio' name='answer' class='radio' onclick="f1('A');"/>{$it.aa}</tr></br>
+				<tr><input type='radio' name='answer' class='radio' onclick="f1('B');"/>{$it.ba}</tr></br>
+				<tr><input type='radio' name='answer' class='radio' onclick="f1('C');"/>{$it.ca}</tr></br>
+				<tr><input type='radio' name='answer' class='radio' onclick="f1('D');"/>{$it.da}</tr></br>
+			</table>
+		</div>
+		</foreach>
+	</body>
+	</html>
+	<script type="text/javascript">
+	function f1(id){
+		//alert(id);
+		var xmlhttp=null;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+       //alert(xmlhttp.responseText);
+       alert("hello");
+    }
+  }
+xmlhttp.open("GET","check.php?id"+id,true);
+xmlhttp.send();
+	}
+	
+	</script>
